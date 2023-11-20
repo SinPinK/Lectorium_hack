@@ -1,13 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: #F4F7FE;
+  font-family: 'DMSans-regular', 'DMSans-medium', 'DMSans-bold';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@font-face {
+  font-family: "DMSans-regular";
+  src: url("../public/DMSans/static/DMSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "DMSans-medium";
+  src: url("../public/DMSans/static/DMSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "DMSans-bold";
+  src: url("../public/DMSans/static/DMSans-Bold.ttf");
 }
