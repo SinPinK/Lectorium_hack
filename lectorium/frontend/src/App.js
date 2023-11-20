@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 
 function App() {
     const [test, setTest] = useState('Go Hack')
+
     useEffect(() => {
         axios({
             method: 'GET',
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{test}</h1>
+
     </div>
   );
 }
