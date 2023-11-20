@@ -16,7 +16,6 @@ module.exports = {
       DMSansMedium: ['DMSans-medium','sans-serif'],
       DMSansBold: ['DMSans-bold','sans-serif'],
     },
-    
   },
   plugins: [],
 }
