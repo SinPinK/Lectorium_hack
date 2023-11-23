@@ -7,17 +7,18 @@ import { AppRouter } from "./pages/AppRouter";
 function App() {
   const [test, setTest] = useState("Go Hack");
 
-  // useEffect(() => {
-  //     axios({
-  //         method: 'GET',
-  //         url: window.location.origin+'/api/test/',
-  //     }).then(response => {
-  //         setTest(JSON.parse(response.data))
-  //     })
-  // })
+  useEffect(() => {
+      axios({
+          method: 'GET',
+          url: window.location.origin+'/api/test/',
+      }).then(response => {
+          setTest(JSON.parse(response.data))
+      })
+  })
   return (
     <BrowserRouter>
     <Navbar>
+    <h1>{test}</h1>
     <AppRouter />
     </Navbar>
      
