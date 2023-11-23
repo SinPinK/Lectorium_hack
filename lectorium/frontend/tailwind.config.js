@@ -6,10 +6,26 @@ module.exports = {
       colors: {
         'white': '#FFFFFF',
         'black': '#000000',
-        'light-gray': '#f4f7fe',
+        'light-grey': '#f4f7fe',
         'secondary': '#2B3674',
         'text-prim': '#A3AED0',
+        'secondary-grey': '#FAFCFE',
+        'dark-grey': '#8F9BBA',
+        'primary': '#4318FF'
       },
+      maxWidth: {
+        nv:'290px',
+        card:'590px',
+        drop:'268px'
+      },
+      spacing: {
+        nx:'76px',
+        nxs:'33px',
+        ny:'52px'
+      },
+      borderRadius: {
+        20:'20px'
+      }
     },
     fontFamily: {
       DMSansRegular: ['DMSans-regular', 'sans-serif'],
