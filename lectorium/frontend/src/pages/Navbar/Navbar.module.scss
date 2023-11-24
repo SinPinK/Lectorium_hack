@@ -2,24 +2,21 @@
   @apply h-full w-screen flex min-h-screen justify-items-start flex-row;
 
   .wrapper {
-    @apply bg-white max-w-xs;
+    @apply bg-white max-w-nv mr-5;
 
     .logo {
-      @apply block text-secondary px-2 py-2 font-bold border-b-2 border-light-gray mb-2;
+      @apply block text-secondary px-nx py-ny font-bold border-b-2 border-light-grey mb-2;
     }
 
     .menu {
-      @apply flex flex-col justify-end items-start px-2;
+      @apply flex flex-col justify-end items-start px-nxs;
 
       .btn {
-        @apply text-base font-DMSansRegular flex flex-row gap-2 items-end text-text-prim;
+        @apply text-base font-DMSansRegular flex flex-row gap-3 items-end text-text-prim;
         .icon {
           @apply w-6 h-6;
-
         }
       }
     }
   }
-  
-  
 }
