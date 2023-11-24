@@ -22,23 +22,23 @@ export const MainPage: React.FC = () => {
   const [content, setContent] = useState<ITranscribedText[]>([]);
   const [isLoading, setIsLoading] = useState(false)
 
-  // const [par, setPar] = useState<ITranscribedText[]>([{
-  //   id: 0,
-  //   body:{
-  //     part1:'part1',
-  //     part2:'lol2',
-  //     part3:'lol3',
-  //     part4:'lol4',
-  //     part5:'lol2',
-  //     part6:'lol2',
-  //     part7:'lol2',
-  //     part8:'lol2',
-  //     part9:'lol2',
-  //     part10:'lol2',
-  //     part11:'lol2'
+  const [par, setPar] = useState<ITranscribedText[]>([{
+    id: 0,
+    body:{
+      part1:'part1',
+      part2:'lol2',
+      part3:'lol3',
+      part4:'lol4',
+      part5:'lol2',
+      part6:'lol2',
+      part7:'lol2',
+      part8:'lol2',
+      part9:'lol2',
+      part10:'lol2',
+      part11:'lol2'
 
-  //   }
-  // }])
+    }
+  }])
 
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export const MainPage: React.FC = () => {
   async function fetchPosts() {
     try {
       setIsLoading(true);
-      const response = await axios.get<ITranscribedText[]>(
+      const response = await axios.get(
         window.location.origin + "/api/test/"
       );
       setContent(response.data);
@@ -58,6 +58,16 @@ export const MainPage: React.FC = () => {
       console.log(e);
     }
   }
+
+//   useEffect(() => {
+//     axios({
+//         method: 'GET',
+//         url: window.location.origin+'/api/test/',
+//     }).then(response => {
+//         setContent(JSON.parse(response.data))
+//         console.log('from useEffect: ', JSON.parse(response.data).body)
+//     })
+// })
 
   return (
     <div className="flex flex-col gap-8">
@@ -70,7 +80,7 @@ export const MainPage: React.FC = () => {
       </div>
 
       <List
-        items={content}
+        items={par}
         renderItem={(item) => <TextBlock props={item} key={item.id} />}
       />
     </div>
