@@ -6,19 +6,21 @@ import { AppRouter } from "./pages/AppRouter";
 
 function App() {
   const [test, setTest] = useState("Go Hack");
+  const [content, setContent] = useState({'test': "Go hack"})
 
   useEffect(() => {
       axios({
           method: 'GET',
           url: window.location.origin+'/api/test/',
       }).then(response => {
-          setTest(JSON.parse(response.data))
+          setContent(JSON.parse(response.data))
+          console.log('from useEffect: ', JSON.parse(response.data).body)
       })
   })
   return (
     <BrowserRouter>
     <Navbar>
-    <h1>{test}</h1>
+    <h1>{content['test']}</h1>
     <AppRouter />
     </Navbar>
      
