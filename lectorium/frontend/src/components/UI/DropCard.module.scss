@@ -7,13 +7,17 @@
       
 
         h2{
-          @apply text-xl font-bold text-primary;
+          @apply text-xl font-bold text-primary transition;
         }
-
+       
         span {
           @apply text-xs text-dark-grey
         }
       
+    }
+
+    .drop__active {
+      @apply flex flex-col mr-8 bg-secondary-grey p-12 rounded-xl items-center cursor-pointer max-w-drop border-2 border-dashed scale-75;
     }
 
     .card__desc {

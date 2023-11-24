@@ -4,6 +4,7 @@ import styles from "../Navbar/Navbar.module.scss";
 import logo from "../../assets/icons/lectarium-logo.svg";
 import help from "../../assets/icons/help.svg";
 import main from "../../assets/icons/main.svg";
+import glossary from '../../assets/icons/glossary.svg'
 import profile from "../../assets/icons/profile.svg";
 
 type Props = {
@@ -46,9 +47,18 @@ export const Navbar: React.FC<Props> = ({ children }) => {
             <img className={styles.icon} src={profile} alt="" />
             Архив
           </button>
+          <button
+            className={styles.btn}
+            onClick={() => {
+              navigate("/glossary");
+            }}
+          >
+            <img className={styles.icon} src={glossary} alt="" />
+            Глоссарий
+          </button>
         </div>
       </div>
-      <div className="pt-12">
+      <div className="pt-12 pr-16">
       {children}
       </div>
       
