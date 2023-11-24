@@ -24,4 +24,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('backend.api.urls')),
     path('', views.index),
+    path('main/', views.index),
+    path('help/', views.index),
+    path('archive/', views.index),
+    path('glossary/', views.index),
 ]

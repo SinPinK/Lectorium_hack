@@ -9,10 +9,10 @@ import { Glossary } from './Glossary/Glossary';
 export const AppRouter = () => {
   return (
     <Routes>
-        <Route path="/main" element={<MainPage/>}/>
-        <Route path="/help" element={<Help/>}/>
-        <Route path="/archive" element={<Archive/>}/>
-        <Route path="/glossary" element={<Glossary />}/>
+        <Route path="/main/" element={<MainPage/>}/>
+        <Route path="/help/" element={<Help/>}/>
+        <Route path="/archive/" element={<Archive/>}/>
+        <Route path="/glossary/" element={<Glossary />}/>
       </Routes>
   )
 }

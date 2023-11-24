@@ -50,7 +50,6 @@ class TranscriptionAudio(APIView):
         a = TranscriptionAudio()
         text_body = a.trascript()
         resp = {
-            'test': test,
             'id': 0,
             'body': text_body
 
