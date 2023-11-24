@@ -10,7 +10,7 @@ export const ConceptItem:React.FC<ConceptItemProps> = ({props}) => {
   return (
     <div className={styles.concept}>
       <h2>{props.id}.{props.title}</h2>
-      {/* <p>{props.body}</p> */}
+      <p>{props.body}</p>
     </div>
   )
 }

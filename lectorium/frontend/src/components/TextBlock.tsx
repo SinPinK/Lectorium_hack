@@ -11,7 +11,8 @@ export const TextBlock:React.FC<TextBlockProps> = ({props}) => {
   return (
     <div className={styles.transcribation}>
       <div className={styles.transcribation__text}>
-        <p >{props.body.part1}</p>
+        <p >{props.body.part2}
+        {props.body.part3} {props.body.part4}</p>
         <Button title='Скачать' variant={ButtonVariant.primary}/>
       </div>
       

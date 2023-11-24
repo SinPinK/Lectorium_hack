@@ -10,6 +10,23 @@ import { TextBlock } from "./components/TextBlock";
 function App() {
   const [test, setTest] = useState();
   const [content, setContent] = useState<ITranscribedText[]>([])
+  const [par, setPar] = useState<ITranscribedText[]>([{
+    id: 0,
+    body:{
+      part1:'lol',
+      part2:'lol2',
+      part3:'lol3',
+      part4:'lol4',
+      part5:'lol2',
+      part6:'lol2',
+      part7:'lol2',
+      part8:'lol2',
+      part9:'lol2',
+      part10:'lol2',
+      part11:'lol2'
+
+    }
+  }])
 
   const [isLoading, setIsLoading] = useState(false)
 
@@ -21,11 +38,11 @@ function App() {
 
   async function fetchPosts() {
     try {
-      setIsLoading(false)
+      setIsLoading(true)
       const response = await axios.get<ITranscribedText[]>(window.location.origin+'/api/test/')
       setContent(response.data)
       console.log(content);
-      setIsLoading(true)
+      setIsLoading(false)
     }catch(e) {
       console.log(e);
     }
@@ -44,12 +61,9 @@ function App() {
 // })
   return (
     <BrowserRouter>
-    {/* <List items={content} renderItem={(item) => <TextBlock props={item.body} key={item.id} /> } /> */}
+    
     <Navbar>
-      {/* {isLoading ? <p>`${}` </p>
-                : <p>lol</p>
-      }
-     */}
+  
     <AppRouter />
     </Navbar>
      

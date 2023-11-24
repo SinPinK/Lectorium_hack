@@ -20,6 +20,6 @@ export interface ITranscribedText {
 export interface IConcept {
   id: number;
   title: string;
-  body: IParagraph;
+  body: string;
 }
 

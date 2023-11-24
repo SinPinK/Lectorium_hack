@@ -58,7 +58,7 @@ export const Navbar: React.FC<Props> = ({ children }) => {
           </button>
         </div>
       </div>
-      <div className="pt-12 pr-16">
+      <div className="pt-12 pr-16 w-full">
       {children}
       </div>
       
