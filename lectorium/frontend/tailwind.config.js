@@ -18,6 +18,9 @@ module.exports = {
         card:'590px',
         drop:'268px'
       },
+      maxHeight: {
+        card:'305px'
+      },
       spacing: {
         nx:'76px',
         nxs:'33px',

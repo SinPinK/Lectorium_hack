@@ -5,7 +5,10 @@
     @apply bg-white max-w-nv mr-5 w-full;
 
     .logo {
-      @apply block text-secondary px-nx py-ny font-bold border-b-2 border-light-grey mb-2;
+      @apply text-secondary px-nx py-ny font-bold border-b-2 border-light-grey mb-2 w-full;
+      img {
+        @apply max-w-none
+      }
     }
 
     .menu {
