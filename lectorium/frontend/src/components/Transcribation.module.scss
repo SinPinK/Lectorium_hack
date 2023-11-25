@@ -2,8 +2,24 @@
   @apply bg-white rounded-20;
    .transcribation__text {
     @apply pt-14 mb-3 px-4;
-      p {
-        @apply text-xl pl-9 bg-light-grey rounded-xl pr-4 py-9 mb-6;
+      .transcribation__wrapper {
+        @apply text-xl pl-9 bg-light-grey rounded-xl pr-4 py-9 mb-6 transition-all;
+      }
+
+      .transcribation__p1 {
+       
+      }
+      .transcribation__p2 {
+        
+      }
+      .transcribation__p3 {
+        
+      }
+      .transcribation__p4 {
+        
+      }
+      .transcribation__desc {
+        @apply text-text-prim mb-4 text-xl
       }
    } 
 }

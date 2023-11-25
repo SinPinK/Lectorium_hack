@@ -1,8 +1,12 @@
 .card {
-  @apply max-w-card  rounded-20 bg-white flex pt-8 pl-7 pb-12 pr-14 items-center;
+  @apply max-w-card  rounded-20 bg-white flex pt-8 pl-7 pb-12 pr-14 items-center relative z-0;
+  
+  .loader {
+    @apply bg-black
+  }
   
     .card__drop {
-      @apply  flex flex-col mr-8 bg-secondary-grey p-12 rounded-xl items-center cursor-pointer max-w-drop border-2 border-dashed;
+      @apply  flex flex-col mr-8 bg-secondary-grey p-12 rounded-xl items-center cursor-pointer max-w-drop border-2 border-dashed transition transition-all ease-in-out scale-100;
 
       
 
@@ -16,9 +20,12 @@
       
     }
 
+    
+
     .drop__active {
       @apply flex flex-col mr-8 bg-secondary-grey p-12 rounded-xl items-center cursor-pointer max-w-drop border-2 border-dashed scale-75;
     }
+
 
     .card__desc {
       @apply flex flex-col items-start;
@@ -35,3 +42,4 @@
     } 
     
 }
+

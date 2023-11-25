@@ -2,14 +2,7 @@ export interface IParagraph {
   part1: string,
   part2: string,
   part3: string,
-  part4: string,
-  part5: string,
-  part6: string,
-  part7: string,
-  part8: string,
-  part9: string,
-  part10: string,
-  part11: string;
+  part4: string;
 }
 
 export interface ITranscribedText {

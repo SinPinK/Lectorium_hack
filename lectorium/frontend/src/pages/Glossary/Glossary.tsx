@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import List from "../../components/UI/List/List";
 import { ConceptItem } from "../../components/UI/Concept/ConceptItem";
+import { ListVariant } from "../../components/UI/List/List";
 
 export const Glossary: React.FC = () => {
 
@@ -15,6 +16,7 @@ export const Glossary: React.FC = () => {
   return (
     <div>
       <List
+       variant={ListVariant.card}
         items={conc}
         renderItem={(item) => <ConceptItem props={item} key={item.id} />}
       />
