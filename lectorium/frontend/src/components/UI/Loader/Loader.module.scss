@@ -1,8 +1,4 @@
 
-.dialog {
-  @apply absolute w-screen h-screen bg-slate-200;
   .loader {
-    @apply absolute left-1/2 top-1/2 animate-spin z-10;
+    @apply absolute right-28 top-10 animate-spin z-10;
   }
-}
-  
