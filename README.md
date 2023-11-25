@@ -1,4 +1,4 @@
-# Project Lectarium
+# Project Lectarium for GeekBrains
 
 Methodologist's AI assistant for transcribing audio into text
 
