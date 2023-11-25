@@ -4,6 +4,11 @@ Methodologist's AI assistant for transcribing audio into text
 
 ## Available Scripts for getting the application started
 
+### First step
+You need to clone this project to do as follows:
+
+### `git clone https://github.com/SinPinK/Lectorium_hack.git`
+
 ### For frontend
 In the project directory Lectorium_hack/lectorium/frontend, you can run:
 
