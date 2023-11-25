@@ -1,0 +1,37 @@
+.card {
+  @apply max-w-card  rounded-20 bg-white flex pt-8 pl-7 pb-12 pr-14 items-center;
+  
+    .card__drop {
+      @apply  flex flex-col mr-8 bg-secondary-grey p-12 rounded-xl items-center cursor-pointer max-w-drop border-2 border-dashed;
+
+      
+
+        h2{
+          @apply text-xl font-bold text-primary transition;
+        }
+       
+        span {
+          @apply text-xs text-dark-grey
+        }
+      
+    }
+
+    .drop__active {
+      @apply flex flex-col mr-8 bg-secondary-grey p-12 rounded-xl items-center cursor-pointer max-w-drop border-2 border-dashed scale-75;
+    }
+
+    .card__desc {
+      @apply flex flex-col items-start;
+
+        h2 {
+          @apply text-secondary font-bold text-2xl;
+        }
+
+        span {
+          @apply text-text-prim text-sm
+        }
+
+        
+    } 
+    
+}

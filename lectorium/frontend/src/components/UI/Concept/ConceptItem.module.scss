@@ -1,0 +1,9 @@
+.concept {
+  @apply bg-white p-4 rounded-20 flex flex-col items-start;
+    h2 {
+      @apply bg-light-grey p-2 rounded-xl text-primary font-bold text-xs cursor-pointer;
+    }
+    p {
+      @apply  pl-4 text-sm text-text-prim
+    }
+}

@@ -1,0 +1,9 @@
+.transcribation {
+  @apply bg-white rounded-20;
+   .transcribation__text {
+    @apply pt-14 mb-3 px-4;
+      p {
+        @apply text-xl pl-9 bg-light-grey rounded-xl pr-4 py-9 mb-6;
+      }
+   } 
+}

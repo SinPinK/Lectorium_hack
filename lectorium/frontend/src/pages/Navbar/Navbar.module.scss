@@ -1,0 +1,25 @@
+.navbar {
+  @apply h-full w-screen flex min-h-screen justify-items-start flex-row;
+
+  .wrapper {
+    @apply bg-white max-w-nv mr-5 w-full;
+
+    .logo {
+      @apply text-secondary px-nx py-ny font-bold border-b-2 border-light-grey mb-2 w-full;
+      img {
+        @apply max-w-none
+      }
+    }
+
+    .menu {
+      @apply flex flex-col justify-end items-start px-nxs;
+
+      .btn {
+        @apply text-base font-DMSansRegular flex flex-row gap-3 items-end text-text-prim;
+        .icon {
+          @apply w-6 h-6;
+        }
+      }
+    }
+  }
+}
