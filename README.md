@@ -22,10 +22,10 @@ Your app is ready to be deployed!
 ### For backend
 In the project directory Lectorium_hack/lectorium, you can run:
 
-#### `python manage.py runserver`
-
-Starting development server at http://127.0.0.1:8000/
-
 #### `pip install django djangorestframework django-cors-headers requests`
  
 For installing Django, DRF and requests libs
+
+#### `python manage.py runserver`
+
+Starting development server at http://127.0.0.1:8000/
