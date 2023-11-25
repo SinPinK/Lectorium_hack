@@ -1,6 +1,6 @@
 # Project Lectarium
 
-Methodologist's assistant for transcribing audio into text
+Methodologist's AI assistant for transcribing audio into text
 
 ## Available Scripts for getting the application started
 
