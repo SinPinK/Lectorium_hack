@@ -41,14 +41,14 @@ function App() {
       setIsLoading(true)
       const response = await axios.get<ITranscribedText[]>(window.location.origin+'/api/test/')
       setContent(response.data)
-      console.log(content);
+      console.log('from app tsx', response.data);
       setIsLoading(false)
     }catch(e) {
       console.log(e);
     }
   }
 
-  console.log(content)
+  //console.log(content)
 
 //   useEffect(() => {
 //     axios({

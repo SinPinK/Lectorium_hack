@@ -52,7 +52,7 @@ export const MainPage: React.FC = () => {
         window.location.origin + "/api/test/"
       );
       setContent(response.data);
-      console.log(content);
+      console.log('from main page', response.data);
       setIsLoading(false);
     } catch (e) {
       console.log(e);
